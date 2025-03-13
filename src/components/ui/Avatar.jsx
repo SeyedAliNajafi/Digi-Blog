@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Avatar({ src, width = 24, height = 24 }) {
   return (
-    <Image
+    <img
       src={src || "/images/avatar.png"}
       width={width}
       height={height}

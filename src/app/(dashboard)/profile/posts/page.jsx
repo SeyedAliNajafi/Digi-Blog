@@ -7,6 +7,7 @@ import Fallback from "@/components/ui/Fallback";
 import Search from "@/components/ui/Search";
 import queryString from "query-string";
 import Pagination from "@/components/ui/Pagination";
+import Loading from "@/components/ui/Loading";
 
 async function PostPage({ searchParams }) {
   const query = queryString.stringify(searchParams);
@@ -26,7 +27,9 @@ async function PostPage({ searchParams }) {
         <PostsTable query={query} />
       </Suspense>
       <div className="mt-5 flex w-full justify-center">
-        <Pagination totalPages={totalPages} />
+        <Suspense fallback={<Loading />}>
+          <Pagination totalPages={totalPages} />
+        </Suspense>
       </div>
     </div>
   );

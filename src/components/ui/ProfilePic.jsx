@@ -23,12 +23,12 @@ if(!user)return "oh"
           {str}
         </div>
       ) : (
-        <Image
+        <img
           className="rounded-full"
           width={width}
           height={height}
           src={user?.avatarUrl}
-        ></Image>
+        ></img>
       )}
     </div>
   );

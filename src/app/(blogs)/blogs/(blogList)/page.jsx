@@ -1,9 +1,11 @@
 import BlogList from "@/components/blog/BlogList";
+import Loading from "@/components/ui/Loading";
 import Pagination from "@/components/ui/Pagination";
 import { getAllPostsApi } from "@/services/postService";
 import setCookiesOnReq from "@/utils/setCookieOnReq";
 import { cookies } from "next/headers";
 import queryString from "query-string";
+import { Suspense } from "react";
 
 // export const dynamic = "force-dynamic";
 
@@ -40,7 +42,9 @@ async function Page({ searchParams }) {
 
       {posts.length > 0 ? <BlogList posts={posts} /> : null}
       <div className="mt-5 flex w-full justify-center">
-        <Pagination totalPages={totalPages} />
+        <Suspense fallback={<Loading/>}>
+          <Pagination totalPages={totalPages} />
+        </Suspense>
       </div>
     </>
   );

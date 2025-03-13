@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 function Footer() {
   return (
-    <div className="container xl:max-w-screen-xl bg-gray-100 rounded-2xl p-4 mt-10 lg:my-10 px-3">
+    <div className="container xl:max-w-screen-xl bg-gray-100 dark:bg-gray-600 rounded-2xl p-4 mt-10 lg:my-10 px-3">
       <div className="flex flex-col md:flex-row justify-between items-center mx-8 gap-y-">
         <div className="md:w-96 w-80">
           <Logo size="size-24" />

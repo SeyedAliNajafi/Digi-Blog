@@ -197,7 +197,7 @@ function CreatePostForm({ postToEdit = {} }) {
 
       {coverImageUrl && (
         <div className="relative aspect-w-16 aspect-h-9 overflow-hidden rounded-lg">
-          <Image
+          <img
             className="object-cover object-center"
             fill
             alt="cover-iamge"

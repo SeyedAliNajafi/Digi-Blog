@@ -3,6 +3,8 @@ import "@/styles/globals.css";
 import { Toaster } from "react-hot-toast";
 import AuthProvier from "@/context/AuthContext";
 import ReactQueryProvider from "@/providers/ReactQueryProvider";
+import { Suspense } from "react";
+import Loading from "@/components/ui/Loading";
 
 export const metadata = {
   title: "Create Next App",
@@ -14,9 +16,11 @@ export default function RootLayout({ children }) {
     <html lang="fa" dir="rtl" className="">
       <body className={`min-h-screen  ${vazirFont.variable} font-sans `}>
         <Toaster />
-        <ReactQueryProvider>
-          <AuthProvier>{children}</AuthProvier>
-        </ReactQueryProvider>
+        <Suspense fallback={<Loading />}>
+          <ReactQueryProvider>
+            <AuthProvier>{children}</AuthProvier>
+          </ReactQueryProvider>
+        </Suspense>
       </body>
     </html>
   );
