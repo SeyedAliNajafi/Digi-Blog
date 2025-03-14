@@ -24,6 +24,7 @@
     "react-dom": "^18",
     "react-hook-form": "^7.52.1",
     "react-hot-toast": "^2.4.1",
+    "tailwindcss-aspect-ratio": "^3.0.0",
     "yup": "^1.4.0"
   },
   "devDependencies": {
