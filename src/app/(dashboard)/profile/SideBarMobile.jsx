@@ -32,7 +32,7 @@ function SideBarMobile({ isOpen, setIsOpen }) {
   return (
     <div
       ref={sidebarRef}
-      className={`w-[280px] lg:hidden fixed h-screen z-50 bg-white p-4 top-0 -right-1 tran  ${
+      className={`w-[280px] lg:hidden fixed h-screen z-50 bg-white dark:bg-slate-700 p-4 top-0 -right-1 tran  ${
         isOpen ? "translate-x-0" : "translate-x-[280px]"
       }`}
     >

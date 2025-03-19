@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Auth",
+  title: "ورود",
   description: "Auth",
 };
 
