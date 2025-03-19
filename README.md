@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Digi Blog
+![Project logo](digiblog.png)
 
-## Getting Started
+## About the project
+A public blog app that you can create and modify posts and categories and the ability to like and bookmart posts. made using Next.js, TailwindCSS, React hook form and React Query.
 
-First, run the development server:
+## Features
+- React Query and React hook form
+- User panel
+- The ability to create, edit and delete posts or categories
+- Commneting below blogs and modfying them
+- Bookmark or like the blogs
+- Light and Dark mode
 
+If you want to see the live website you can click [here](https://digiblog-app.ir) or check my [portfolio](https://seyedalinajafi.ir).
+
+## Installation
+If you want to install this project you have to do the steps below and if you want the backend file contact me.
 ```bash
+git clone [https://github.com/SeyedAliNajafi/Digi-Shop.git](https://github.com/SeyedAliNajafi/Digi-Blog.git)
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
